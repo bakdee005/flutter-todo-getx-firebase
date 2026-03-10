@@ -1,16 +1,140 @@
-# todo_listapp
+# Flutter Todo App (GetX + Firebase)
 
-A new Flutter project.
+A modern **Todo Task Management Application** built with **Flutter**, using **GetX** for state management and **Firebase** for authentication and realtime data storage.
 
-## Getting Started
+This project demonstrates a **clean architecture Flutter application** with authentication, task CRUD operations, and responsive UI.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* 🔐 Firebase Email & Password Authentication
+* 🟢 Google Sign-In Authentication
+* 📋 Create, Edit, Delete Tasks
+* ✅ Mark Tasks as Completed
+* ☁️ Firebase Realtime Database Integration
+* ⚡ GetX State Management
+* 🎨 Clean and Responsive UI
+* 🔓 Logout Confirmation Dialog
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🛠 Tech Stack
+
+* **Flutter**
+* **GetX**
+* **Firebase Authentication**
+* **Firebase Realtime Database**
+* **HTTP Package**
+
+---
+
+## 📂 Project Structure
+
+```
+lib
+ ┣ modules
+ ┃ ┣ auth
+ ┃ ┃ ┣ controller
+ ┃ ┃ ┣ view
+ ┃ ┣ tasks
+ ┃ ┃ ┣ controller
+ ┃ ┃ ┣ view
+ ┣ models
+ ┣ services
+ ┣ routes
+ ┣ widgets
+ ┗ main.dart
+```
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/yourusername/flutter-todo-getx-firebase.git
+```
+
+### 2️⃣ Navigate to project
+
+```
+cd flutter-todo-getx-firebase
+```
+
+### 3️⃣ Install dependencies
+
+```
+flutter pub get
+```
+
+### 4️⃣ Add Firebase configuration
+
+Add your Firebase config files:
+
+Android:
+
+```
+android/app/google-services.json
+```
+
+iOS:
+
+```
+ios/Runner/GoogleService-Info.plist
+```
+
+### 5️⃣ Run the app
+
+```
+flutter run
+```
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots here)
+
+Example:
+
+* Login Screen
+* Task List Screen
+* Add Task Bottom Sheet
+* Logout Dialog
+
+---
+
+## 🔐 Authentication
+
+This project supports:
+
+* Email & Password Login
+* Google Sign-In
+
+Firebase automatically maintains user session for **auto login**.
+
+---
+
+## 📡 Database
+
+Tasks are stored using **Firebase Realtime Database**.
+
+Example structure:
+
+```
+tasks
+ ┣ userId
+ ┃ ┣ taskId
+ ┃ ┃ ┣ title
+ ┃ ┃ ┣ hours
+ ┃ ┃ ┗ completed
+```
+
+---
+
+## 👨‍💻 Author
+
+**Deepak Karnan**
+
